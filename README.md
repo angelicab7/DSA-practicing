@@ -7,3 +7,7 @@ Each folder represents a specific topic or set of problems, and each file contai
 ## 📂 Repository Structure
 
 The repository is organized by topic to make it easy to find and review specific algorithms.
+
+## Big O Notation
+
+![alt text](image.png)
