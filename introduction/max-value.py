@@ -12,10 +12,13 @@ Space = 0(1)
 '''
 
 def max_value(nums):
-  maximum = float('-inf')
-  
+  # Initialize the maximum value with the first element of the list. It guarantees the list is non-empty
+  maximum = nums[0]
+  # Iterate through each number in the list.
   for num in nums:
+    # Check if the current number is greater than the current maximum.
     if num > maximum:
+      # If it is, update maximum to the new largest number.
       maximum = num
       
   return maximum

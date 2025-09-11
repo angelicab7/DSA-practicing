@@ -12,15 +12,21 @@ Space: O(n)
 '''
 
 def fizz_buzz(n):
+  # Initialize an empty list to store the results.
   result = []
 
+# Loop through the numbers from 1 up to and including n.
   for i in range(1, n + 1):
+     #Check for divisibility by both 3 and 5 first. It's better to start with the case where 3 and 5 are true.
     if i % 3 == 0 and i % 5 == 0:
       result.append("fizzbuzz")
+      # Check for divisibility by 3.
     elif i % 3 == 0:
       result.append("fizz")
+      # Check for divisibility by 5.
     elif i % 5 == 0:
       result.append("buzz")
+      # If the number was not replaced by any of the above rules, append the number itself to the list.
     else:
       result.append(i)
 
